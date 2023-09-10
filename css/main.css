@@ -1,0 +1,497 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@700;900&display=swap');
+
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    --white: #fffdfd;
+    --accent: #64BF1F;
+    --text: 'Roboto', sans-serif;
+    --title-text: 'Pacifico', cursive;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    max-width: 1472px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+    max-height: 1005px;
+    padding-bottom: 238px;
+
+    color: var(--white);
+
+    background-image: url(../img/Group\ 1.png);
+    background-size: 100% 100%;
+}
+
+/* Nav */
+
+.nav {
+    color: var(--white);
+    z-index: 1;
+    position: relative;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.list {
+    margin-top: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.list__item {
+    transition: opacity 0.2s ease-in;
+}
+
+.list__item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.phone {
+    margin-top: -50px;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.phone:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Header-content */
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content-text h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.header-content-text h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    margin-bottom: 48px;
+}
+
+.info {
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 48px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 12px auto;
+    padding: 17px 51px;
+    border-radius: 30px;
+    height: 62px;
+    width: 235px;
+    background-color: var(--accent);
+    color: var(--white);
+
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.header-content-img {
+    margin-top: -150px;
+}
+
+/* Sections */
+
+.recipe {
+    background-image: url(../img/bgwhite.png);
+    background-size: 100% 100%;
+    height: 1258px;
+}
+
+.recipe a {
+    color: #000;
+}
+
+.title {
+    padding: 120px 0px;
+    font-family: var(--title-text);
+    font-size: 80px;
+    text-align: center;
+}
+
+.recipe-list {
+    display: flex;
+    column-gap: 10px;
+    padding: 20px;
+}
+
+.recipe-list__item {
+    width: 280px;
+}
+
+.recipe-list__item a {
+    height: 404px;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--text);
+    font-size: 18px;
+}
+
+.recipe-list__item a:hover {
+    background-color: var(--accent);
+    border-radius: 50px;
+}
+
+.recipe__img {
+    height: 171px;
+    width: 157px;
+}
+
+.recipe-list__item h2 {
+    font-family: var(--title-text);
+    font-size: 64px;
+}
+
+/* .recipe-list__item--active {
+    background-color: var(--accent);
+    border-radius: 50px;
+} */
+
+/* Recipe Day*/
+
+.recipe_day {
+    padding: 200px  50px 50px;
+    margin-top: -120px;
+
+    background-image: url(../img/Group\ 2.png);
+    background-size: 100% 100%;
+
+    color: var(--white);
+}
+
+.recipe_day h1 {
+    color: var(--white);
+}
+
+.recipe_day p {
+    max-width: 983px;
+    padding: 50px 0;
+    line-height: 1.5;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.recipe_day--ingredients {
+    margin: 0 auto;
+    display: flex;
+    column-gap: 50px;
+}
+
+.recipe_day--ingredients h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+
+.ingredients_list {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ingredients_list--item {
+    padding-bottom: 10px;
+}
+
+.recipe_day_image {
+    display: flex;
+    column-gap: 30px;
+}
+
+/* Goods */
+
+.equipment {
+    padding: 0 50px;
+}
+
+.goods {
+    display: flex;
+    column-gap: 30px;
+}
+
+.goods_text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 50px;
+    line-height: 1.5;
+}
+
+.goods_text p {
+    font-size: 24px;
+    font-weight: 700;
+}
+.short_goods {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.short_goods_img_small {
+    padding-bottom: 71px;
+}
+
+.short_goods--text p {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.short_goods--text a {
+    font-size: 24px;
+}
+
+.goods_color {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.goods_color img{
+    margin: 0 auto;
+}
+
+.goods_color--text h2 {
+    font-size: 36px;
+    padding: 30px;
+}
+
+.btn_goods {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.btn_goods img {
+    height: 33px;
+    padding: auto 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 0;
+
+    background-image: url(../img/Group\ 1.png);
+}
+
+.footer_contacts h1 {
+    font-family: var(--text);
+    font-size: 48px;
+    font-weight: 700;
+
+    color: var(--white);
+
+    padding-bottom: 26px;
+}
+
+.footer_contacts h2 {
+    font-family: var(--text);
+    font-size: 24px;
+    font-weight: 700;
+
+    color: var(--white);
+}
+
+.footer_phone {
+    color: var(--white);
+
+    font-family: var(--text);
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer_logo {
+    padding: auto 0;
+}
+
+.footer_social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_social h1 {
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 48px;
+    font-weight: 700;
+
+    padding-bottom: 26px;
+}
+
+.social_icon {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer_basil {
+    height: 150px;
+    padding-bottom: -50px;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 99999;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 450px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 100px auto;
+    height: 600px;
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal-header {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+.modal-body {
+    font-family: var(--text);
+    font-size: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body label {
+    font-family: 'Pacifico', cursive;
+}
+
+.modal_name {
+    text-align: center;
+    color: dimgray;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid #000;
+}
+
+.modal_phone {
+    text-align: center;
+    color: dimgray;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid #000;
+}
+
+.modal_email {
+    text-align: center;
+    color: dimgray;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid #000;
+}
+
+.modal-footer {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.open .modal-window {
+    transform: scale(1);
+}
